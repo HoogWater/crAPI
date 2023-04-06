@@ -9,8 +9,7 @@ spec:
   ports:
   - port: {{ .Values.web.port }}
     targetPort: 80
-    nodePort: {{ .Values.web.service.nodePort }}
     name: nginx
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     {{- toYaml .Values.web.serviceSelectorLabels | nindent 4 }}

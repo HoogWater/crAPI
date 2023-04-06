@@ -8,6 +8,7 @@ enableShellInjection: true
 imagePullPolicy: Always
 apiGatewayServiceUrl: https://api.crapi.io
 apiGatewayServiceInstall: true
+createServiceAccount: true
 apiGatewayPassword: 
 
 waitForK8sResources:
